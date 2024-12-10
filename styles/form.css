@@ -1,0 +1,17 @@
+form {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 40px;
+}
+
+input {
+  appearance: none;
+  width: 100%;
+  border-radius: 1rem;
+  border: 2px solid var(--border);
+  padding: 0.875rem
+}
+
+label{
+  display: block;
+}

@@ -1,0 +1,59 @@
+.container{
+  padding: 2.5rem 0;
+}
+.logo{
+  text-align: center;
+  display: block;
+  margin: 0 auto 2.5rem auto;
+}
+
+/*Lista dos itens*/
+.item-list{
+  margin-bottom: 50px;
+}
+.item-list li{
+  background-color: var(--bg-color-02);
+  margin-bottom: 1.25rem;
+  position: relative;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  
+
+  & [type="checkbox"] {
+    all: unset;
+    position: absolute;
+    inset: 0;
+   
+  }
+
+  & .check-image{
+    height: 1rem;
+    flex: 0 0 1.5rem;
+    background-image: url(../../assets/icon/check.svg);
+    background-repeat: no-repeat;
+   
+  }
+  &:has(:checked) .check-image {
+    background-image: url(../../assets/icon/check-selected.svg);
+}
+}
+
+/*Alerta de item removido*/
+.alert-box{
+  background-color: var(--color-danger);
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.75rem;
+  color: #FFFFFF;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+}
+
+
+
+
+
